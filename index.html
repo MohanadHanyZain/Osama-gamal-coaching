@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111111">
+<meta name="description" content="أسامة جمال — تدريب أونلاين وخطط تمرين وتغذية ومتابعة."><title>أسامة جمال | تدريب أونلاين</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{night:'#111111',panel:'#1b1b1b',lime:'#f0141e',muted:'#a8a8a8'},fontFamily:{arabic:['Tajawal','sans-serif'],display:['Changa','sans-serif']},boxShadow:{lime:'0 12px 35px rgba(240,20,30,.16)'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Changa:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{font-family:'Tajawal',sans-serif}h1,h2,h3,.font-display{font-family:'Changa',sans-serif}::selection{background:#f0141e;color:#101312}
+.text-glow{text-shadow:0 0 30px rgba(240,20,30,.35)}
+.edge-glow{position:relative}.edge-glow:after{content:"";position:absolute;inset:-2px;background:linear-gradient(135deg,#f0141e,transparent 40%,transparent 60%,#f0141e);opacity:.35;z-index:-1;filter:blur(6px)}
+@keyframes kenburns{0%{transform:scale(1.08) translateY(0)}100%{transform:scale(1.18) translateY(-2%)}}
+.hero-img{animation:kenburns 18s ease-in-out infinite alternate}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.anim-in{opacity:0;animation:fadeUp .8s ease forwards}
+.anim-d1{animation-delay:.05s}.anim-d2{animation-delay:.2s}.anim-d3{animation-delay:.35s}.anim-d4{animation-delay:.5s}.anim-d5{animation-delay:.65s}
+@keyframes dotPulse{0%,100%{box-shadow:0 0 0 0 #f0141e66}50%{box-shadow:0 0 0 6px #f0141e00}}
+.dot-pulse{animation:dotPulse 1.8s ease-in-out infinite}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.float-anim{animation:floatY 3.2s ease-in-out infinite}
+.nav-underline{position:relative}.nav-underline:after{content:"";position:absolute;right:0;bottom:-4px;width:0;height:2px;background:#f0141e;transition:width .3s ease}.nav-underline:hover:after{width:100%}
+.btn-shine{position:relative;overflow:hidden}.btn-shine:after{content:"";position:absolute;top:0;right:-120%;width:60%;height:100%;background:linear-gradient(115deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:right .6s ease}.btn-shine:hover:after{right:120%}
+@media(prefers-reduced-motion:reduce){.hero-img,.dot-pulse,.float-anim{animation:none}.anim-in{opacity:1;animation:none}}
+.grid-texture{background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:42px 42px}
+.hero-glow{background:radial-gradient(ellipse at 68% 45%,#f0141e18,transparent 55%)}
+.photo-wrap{position:relative;isolation:isolate}.photo-wrap:before{content:"";position:absolute;inset:14px -13px -13px 13px;border:2px solid #f0141e88;z-index:-1;border-radius:1.25rem}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}.reveal.is-visible{opacity:1;transform:translateY(0)}
+.plan-card{transition:transform .25s,border-color .25s}.plan-card:hover{transform:translateY(-6px);border-color:#f0141e99}.plan-card.featured{border-color:#f0141e;background:linear-gradient(160deg,#f0141e1a,#181d1b 45%)}
+.menu-open{display:flex!important}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+:root{--acid:#f0141e;--ink:#111;--steel:#202020}
+body{background:#111;color:#f4f4f1}
+h1,h2,h3{letter-spacing:-.045em}
+a,button{border-radius:0!important}
+header{border-bottom-color:#ffffff18!important}
+.hero-glow{background:radial-gradient(ellipse at 68% 45%,#f0141e18,transparent 55%),linear-gradient(115deg,#111 0%,#151515 60%,#101010 100%)}
+.photo-wrap:before{inset:22px -17px -17px 17px;border:2px solid var(--acid);border-radius:0;transform:skewY(-2deg)}
+.photo-wrap>div.overflow-hidden{border-radius:0!important;transform:skewY(-2deg);box-shadow:22px 22px 0 #ffffff08}
+.photo-wrap img{filter:contrast(1.06) saturate(.82)}
+.plan-card,.plan-card.featured{border-radius:0!important}
+.plan-card{background:linear-gradient(145deg,#202020,#141414);border-color:#ffffff20}
+.plan-card.featured{background:linear-gradient(145deg,#282516,#171717 62%);border-color:var(--acid);box-shadow:8px 8px 0 #f0141e15}
+.plan-card:hover{transform:translateY(-4px);border-color:var(--acid)}
+.plan-card .plan-price{letter-spacing:-.06em}
+section[id="journey"] button,section[id="certificates"] button{border-radius:0!important}
+section[id="journey"] button img{filter:contrast(1.04) saturate(.82)}
+#contact>div{border-color:#f0141e55;background:linear-gradient(115deg,#1b1b1b,#141414)}
+#contact img{filter:contrast(1.08) saturate(.82)}
+.bg-lime{background-color:var(--acid)!important}
+.text-lime{color:var(--acid)!important}
+.border-lime{border-color:var(--acid)!important}
+.shadow-lime{box-shadow:0 12px 35px #f0141e20!important}
+.grid-texture{opacity:.7}
+.hero-kicker{display:inline-flex;align-items:center;gap:10px}
+.hero-kicker:before{content:"";display:block;width:26px;height:2px;background:var(--acid)}
+@media(min-width:1024px){#home .photo-wrap{max-width:450px;margin-left:22px}#home h1{font-size:clamp(3.8rem,5.3vw,5.6rem);line-height:1.23}}
+@media(max-width:640px){#home h1{font-size:2.55rem;line-height:1.4}.photo-wrap:before{inset:12px -8px -8px 8px}.photo-wrap>div.overflow-hidden{box-shadow:10px 10px 0 #ffffff08}}
+
+
+/* BERGO-inspired sports-brand direction, adapted for Osama's real content */
+:root{--acid:#f0141e;--ink:#111;--steel:#202020}
+html{scroll-padding-top:82px}
+body{background:#111;color:#f6f6f6}
+h1,h2,h3{letter-spacing:-.045em}
+a,button{border-radius:0!important}
+header{background:rgba(17,17,17,.94)!important;border-bottom:1px solid #ffffff18!important}
+header .bg-lime{background:#f0141e!important;color:#fff!important}
+header .text-lime{color:#f0141e!important}
+.hero-glow{background:linear-gradient(115deg,rgba(17,17,17,.96),rgba(17,17,17,.72)),radial-gradient(ellipse at 70% 35%,#f0141e20,transparent 60%)}
+.grid-texture{background-image:linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px);background-size:56px 56px}
+.photo-wrap:before{inset:20px -14px -14px 14px;border:2px solid #f0141e;border-radius:0;transform:skewY(-2deg)}
+.photo-wrap>div.overflow-hidden{border-radius:0!important;transform:skewY(-2deg);box-shadow:20px 20px 0 #ffffff08}
+.photo-wrap img{filter:contrast(1.07) saturate(.82)}
+.plan-card,.plan-card.featured{border-radius:0!important}
+.plan-card{background:#1a1a1a;border:1px solid #ffffff12}
+.plan-card.featured{background:linear-gradient(145deg,#291516,#171717 65%);border-color:#f0141e;box-shadow:7px 7px 0 #f0141e18}
+.plan-card:hover{transform:translateY(-4px);border-color:#f0141e}
+#contact>div{border-color:#f0141e66;background:linear-gradient(115deg,#1c1c1c,#111)}
+#contact img{filter:contrast(1.08) saturate(.82)}
+.bg-lime{background:#f0141e!important}
+.text-lime{color:#f0141e!important}
+.border-lime{border-color:#f0141e!important}
+.shadow-lime{box-shadow:0 12px 35px #f0141e22!important}
+.hero-kicker{display:inline-flex;align-items:center;gap:10px;letter-spacing:.12em}
+.hero-kicker:before{content:"";display:block;width:28px;height:2px;background:#f0141e}
+#journey .group img{filter:contrast(1.05) saturate(.86)}
+#certificates .group img{filter:none}
+#about{background:#171717!important}
+#about .text-lime{color:#f0141e!important}
+footer{background:#0b0b0b!important}
+::selection{background:#f0141e;color:white}
+@media(min-width:1024px){#home .photo-wrap{max-width:450px;margin-left:22px}#home h1{font-size:clamp(3.8rem,5.3vw,5.6rem);line-height:1.2}}
+@media(max-width:640px){#home h1{font-size:2.55rem;line-height:1.35}.photo-wrap:before{inset:12px -8px -8px 8px}.photo-wrap>div.overflow-hidden{box-shadow:10px 10px 0 #ffffff08}}
+
+</style></head>
+<body class="bg-night text-[#f4f5ef] antialiased">
+<!-- ضع كل صور PNG في نفس مكان ملف HTML مباشرة، بدون فولدرات. أسماء الصور مكتوبة في نهاية الصفحة. -->
+<!-- رقم واتساب مؤقت: غيّر WHATSAPP_NUMBER في JavaScript إلى الرقم الحقيقي بصيغة دولية بدون + أو مسافات. -->
+<header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-night/85 backdrop-blur-xl">
+<div class="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-5 sm:px-8">
+<a href="#home" class="flex items-center gap-3"><span><b class="block text-lg font-display font-extrabold">أسامة جمال</b><small class="text-[10px] font-bold tracking-[.2em] text-lime" dir="ltr">OSAMA GAMAL</small></span></a>
+<nav class="hidden items-center gap-7 text-sm font-bold text-white/70 md:flex"><a href="#about" class="nav-underline hover:text-lime">عن الكوتش</a><a href="#journey" class="nav-underline hover:text-lime">رحلتي</a><a href="#plans" class="nav-underline hover:text-lime">الباقات</a><a href="#certificates" class="nav-underline hover:text-lime">الشهادات</a><a href="#contact" class="nav-underline hover:text-lime">تواصل</a></nav>
+<a href="#plans" class="hidden bg-lime px-5 py-3 text-sm font-black text-night hover:bg-white sm:inline-flex">اختار باقتك ↗</a>
+<button id="menuButton" class="grid h-11 w-11 place-items-center border border-white/15 md:hidden" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobileMenu"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div>
+<nav id="mobileMenu" class="hidden flex-col gap-1 border-t border-white/10 bg-night px-5 py-4 text-sm font-bold text-white/80 md:hidden"><a class="rounded-lg px-3 py-3 hover:bg-white/5" href="#about">عن الكوتش</a><a class="rounded-lg px-3 py-3 hover:bg-white/5" href="#journey">رحلتي</a><a class="rounded-lg px-3 py-3 hover:bg-white/5" href="#plans">الباقات</a><a class="rounded-lg px-3 py-3 hover:bg-white/5" href="#certificates">الشهادات</a><a class="rounded-lg px-3 py-3 hover:bg-white/5" href="#contact">تواصل</a></nav>
+</header>
+<main>
+<section id="home" class="relative isolate overflow-hidden min-h-[92vh] flex items-center pb-20 pt-32 sm:pb-28 sm:pt-40">
+<div class="absolute inset-0 -z-20 overflow-hidden"><img src="osama-hero.jpg" alt="كوتش أسامة جمال" class="hero-img h-full w-full object-cover object-top" fetchpriority="high"></div>
+<div class="absolute inset-0 -z-10 bg-gradient-to-l from-night via-night/85 to-night/35"></div>
+<div class="absolute inset-0 -z-10 bg-gradient-to-t from-night via-transparent to-night/40"></div>
+<div class="grid-texture pointer-events-none absolute inset-0 -z-10 opacity-40"></div>
+<div class="mx-auto max-w-7xl px-5 sm:px-8">
+<div class="max-w-2xl"><div class="anim-in anim-d1 hero-kicker mb-6 text-xs font-extrabold tracking-[.18em] text-lime sm:text-sm"><span class="dot-pulse h-2 w-2 rounded-full bg-lime"></span> تدريب أونلاين</div>
+<h1 class="anim-in anim-d2 font-display max-w-2xl text-4xl font-extrabold leading-[1.45] tracking-tight text-glow sm:text-5xl lg:text-[4.1rem]">طوّر مستواك.<br><span class="text-lime">وابني جسمك صح.</span></h1>
+<p class="anim-in anim-d3 mt-6 max-w-xl text-base leading-9 text-white/70 sm:text-lg">اختار نظام التدريب المناسب ليك: خطة تمرين وتغذية، ومعاها مستوى المتابعة اللي يريحك. معايا هتبقى فاهم بتتمرن ليه، وماشي صح من أول يوم.</p>
+<div class="anim-in anim-d4 mt-8 flex flex-col gap-3 sm:flex-row"><a href="#plans" class="btn-shine inline-flex items-center justify-center gap-3 bg-lime px-7 py-4 font-black text-night transition hover:-translate-y-1 hover:bg-white">اختار باقتك ↗</a><a href="#journey" class="inline-flex items-center justify-center gap-3 border border-white/30 px-7 py-4 font-bold text-white transition hover:-translate-y-1 hover:border-lime hover:text-lime">اعرف أكتر عن الكوتش ↓</a></div>
+<div class="anim-in anim-d5 mt-10 flex flex-wrap gap-x-6 gap-y-3 border-t border-white/15 pt-6 text-sm text-white/70"><span><b class="text-lime">✳</b> خطط تمرين وتغذية</span><span><b class="text-lime">✳</b> متابعة حسب الباقة</span><span><b class="text-lime">✳</b> دعم مستمر معاك</span></div></div>
+</div></section>
+<section id="about" class="border-y border-white/5 bg-panel py-16 sm:py-20"><div class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 md:grid-cols-[.7fr_1.3fr] md:items-center"><div class="reveal"><p class="text-xs font-extrabold tracking-[.22em] text-lime" dir="ltr">THE COACH</p><h2 class="mt-4 text-3xl font-black leading-relaxed sm:text-4xl">الالتزام بيبدأ<br><span class="text-lime">بخطة واضحة.</span></h2></div><div class="reveal md:border-r md:border-white/10 md:pr-10"><p class="text-base leading-9 text-white/65 sm:text-lg">أنا أسامة جمال، مدرب في مونستر جيم — العباسية، وبقدّم كمان أنظمة تدريب أونلاين. الفكرة إنك تبقى فاهم بتتمرن ليه، وماشي على نظام يناسب هدفك وظروف يومك، مع مستوى المتابعة اللي تختاره.</p><div class="mt-6 flex flex-wrap gap-3"><a href="https://instagram.com/osamagamal6" target="_blank" rel="noopener noreferrer" class="border border-white/15 px-4 py-3 text-sm font-bold hover:border-lime hover:text-lime">◎ Instagram</a><a href="https://www.facebook.com/share/1FPq2YaWAM/" target="_blank" rel="noopener noreferrer" class="border border-white/15 px-4 py-3 text-sm font-bold hover:border-lime hover:text-lime">f Facebook</a></div></div></div></section>
+<section id="journey" class="relative overflow-hidden py-20 sm:py-28"><div class="absolute -left-40 top-20 h-80 w-80 rounded-full bg-lime/5 blur-3xl"></div><div class="relative mx-auto max-w-7xl px-5 sm:px-8"><div class="reveal mb-10 max-w-2xl"><p class="text-xs font-extrabold tracking-[.22em] text-lime" dir="ltr">MY OWN JOURNEY</p><h2 class="mt-3 text-3xl font-black sm:text-4xl">كل رحلة ليها <span class="text-lime">بداية.</span></h2><p class="mt-4 text-sm leading-8 text-white/55 sm:text-base">من أول يوم جيم لحد النهارده — التطور رحلة من شغل والتزام وتعلّم مستمر.</p></div>
+<div class="grid gap-5 md:grid-cols-3">
+<button type="button" data-lightbox="osama-start.png" class="reveal group relative overflow-hidden border border-white/10 bg-panel focus:ring-2 focus:ring-lime" aria-label="تكبير الصورة"><div class="overflow-hidden bg-[#202724]"><img src="osama-start.png" alt="أسامة جمال" loading="lazy" class="aspect-[4/5] w-full object-cover transition duration-500 group-hover:scale-105"></div><span class="absolute left-3 top-3 grid h-9 w-9 place-items-center bg-night/70 text-sm text-lime opacity-0 transition group-hover:opacity-100">↗</span></button>
+<button type="button" data-lightbox="osama-current-1.jpg" class="reveal group relative overflow-hidden border border-white/10 bg-panel focus:ring-2 focus:ring-lime" aria-label="تكبير الصورة"><div class="overflow-hidden bg-[#202724]"><img src="osama-current-1.jpg" alt="أسامة جمال" loading="lazy" class="aspect-[4/5] w-full object-cover transition duration-500 group-hover:scale-105"></div><span class="absolute left-3 top-3 grid h-9 w-9 place-items-center bg-night/70 text-sm text-lime opacity-0 transition group-hover:opacity-100">↗</span></button>
+<button type="button" data-lightbox="osama-current-2.jpg" class="reveal group relative overflow-hidden border border-white/10 bg-panel focus:ring-2 focus:ring-lime" aria-label="تكبير الصورة"><div class="overflow-hidden bg-[#202724]"><img src="osama-current-2.jpg" alt="أسامة جمال" loading="lazy" class="aspect-[4/5] w-full object-cover transition duration-500 group-hover:scale-105"></div><span class="absolute left-3 top-3 grid h-9 w-9 place-items-center bg-night/70 text-sm text-lime opacity-0 transition group-hover:opacity-100">↗</span></button>
+</div></div></section>
+<section id="plans" class="border-y border-white/5 bg-panel py-20 sm:py-28"><div class="mx-auto max-w-7xl px-5 sm:px-8">
+<div class="reveal mx-auto mb-12 max-w-3xl text-center"><p class="text-xs font-extrabold tracking-[.22em] text-lime" dir="ltr">COACHING PLANS</p><h2 class="mt-3 text-3xl font-black sm:text-4xl">اختار مستوى <span class="text-lime">المتابعة المناسب ليك</span></h2><p class="mt-4 text-sm leading-8 text-white/55 sm:text-base">نفس مستويات التدريب متاحة باشتراك شهري أو ٣ شهور. اختار المدة، وبعدها ابعت استفسارك على واتساب.</p></div>
+<div class="mx-auto mb-9 flex w-fit border border-white/10 bg-night p-1.5" role="group" aria-label="مدة الاشتراك"><button type="button" id="monthlyButton" class="bg-lime px-5 py-3 text-sm font-black text-night sm:px-7" aria-pressed="true">شهري</button><button type="button" id="quarterlyButton" class="px-5 py-3 text-sm font-black text-white/60 hover:text-white sm:px-7" aria-pressed="false">٣ شهور <span class="text-lime">•</span></button></div>
+<div class="grid items-stretch gap-5 lg:grid-cols-3">
+<article class="plan-card reveal flex flex-col border border-white/10 bg-night p-6 sm:p-8"><div class="flex items-start justify-between"><div><p class="text-xs font-extrabold tracking-widest text-white/40" dir="ltr">01 / ESSENTIAL</p><h3 class="mt-3 text-2xl font-black">باقة الأساس</h3></div><span class="grid h-11 w-11 place-items-center border border-white/10 text-xl text-lime">↗</span></div><p class="mt-4 min-h-12 text-sm leading-7 text-white/55">خطة واضحة تبدأ منها وتشتغل عليها بنفسك.</p><div class="my-6 border-y border-white/10 py-5"><div class="flex items-end gap-2"><span class="plan-price text-4xl font-black text-lime" data-monthly="750" data-quarterly="2000">750</span><span class="mb-1 text-sm text-white/45">جنيه / <span class="plan-duration">شهر</span></span></div></div><ul class="mb-8 space-y-4 text-sm text-white/75"><li><b class="ml-2 text-lime">✓</b>نظام غذائي حسب الهدف</li><li><b class="ml-2 text-lime">✓</b>برنامج تمرين مخصص</li><li class="text-white/40"><b class="ml-2">—</b>من غير متابعة دورية</li></ul><a data-plan="باقة الأساس" href="#" class="plan-link mt-auto inline-flex justify-center gap-2 border border-white/20 px-5 py-4 text-sm font-extrabold hover:border-lime hover:text-lime">اسأل عن الباقة ↗</a></article>
+<article class="plan-card reveal flex flex-col border border-white/10 bg-night p-6 sm:p-8"><div class="flex items-start justify-between"><div><p class="text-xs font-extrabold tracking-widest text-white/40" dir="ltr">02 / PROGRESS</p><h3 class="mt-3 text-2xl font-black">باقة المتابعة</h3></div><span class="grid h-11 w-11 place-items-center border border-white/10 text-xl text-lime">↗</span></div><p class="mt-4 min-h-12 text-sm leading-7 text-white/55">متابعة أسبوعية تساعدك تراجع خطتك وتكمل.</p><div class="my-6 border-y border-white/10 py-5"><div class="flex items-end gap-2"><span class="plan-price text-4xl font-black text-lime" data-monthly="1000" data-quarterly="2500">1000</span><span class="mb-1 text-sm text-white/45">جنيه / <span class="plan-duration">شهر</span></span></div></div><ul class="mb-8 space-y-4 text-sm text-white/75"><li><b class="ml-2 text-lime">✓</b>نظام غذائي حسب الهدف</li><li><b class="ml-2 text-lime">✓</b>برنامج تمرين مخصص</li><li><b class="ml-2 text-lime">✓</b>متابعة أسبوعية</li></ul><a data-plan="باقة المتابعة" href="#" class="plan-link mt-auto inline-flex justify-center gap-2 border border-white/20 px-5 py-4 text-sm font-extrabold hover:border-lime hover:text-lime">اسأل عن الباقة ↗</a></article>
+<article class="plan-card featured reveal relative flex flex-col border p-6 shadow-lime sm:p-8"><span class="absolute -top-3 left-6 bg-lime px-3 py-1 text-[10px] font-black text-night">أعلى مستوى متابعة</span><div class="flex items-start justify-between"><div><p class="text-xs font-extrabold tracking-widest text-lime/70" dir="ltr">03 / VIP</p><h3 class="mt-3 text-2xl font-black">باقة VIP</h3></div><span class="grid h-11 w-11 place-items-center bg-lime text-xl text-night">✦</span></div><p class="mt-4 min-h-12 text-sm leading-7 text-white/60">متابعة أقرب وتواصل أكثر على مدار رحلتك.</p><div class="my-6 border-y border-white/10 py-5"><div class="flex items-end gap-2"><span class="plan-price text-4xl font-black text-lime" data-monthly="1250" data-quarterly="3000">1250</span><span class="mb-1 text-sm text-white/45">جنيه / <span class="plan-duration">شهر</span></span></div></div><ul class="mb-8 space-y-4 text-sm text-white/80"><li><b class="ml-2 text-lime">✓</b>نظام غذائي وتمرين مخصص</li><li><b class="ml-2 text-lime">✓</b>متابعة يومية</li><li><b class="ml-2 text-lime">✓</b>مكالمات وتواصل مباشر</li></ul><a data-plan="باقة VIP" href="#" class="plan-link btn-shine mt-auto inline-flex justify-center gap-2 bg-lime px-5 py-4 text-sm font-black text-night hover:bg-white">اختار باقة VIP ↗</a></article>
+</div><p class="mx-auto mt-7 max-w-3xl text-center text-xs leading-7 text-white/40">تفاصيل المتابعة والمكالمات بتتأكد مع الكوتش قبل الاشتراك. الأسعار بالجنيه المصري.</p>
+</div></section>
+<section id="certificates" class="py-20 sm:py-28"><div class="mx-auto max-w-7xl px-5 sm:px-8"><div class="reveal mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"><div><p class="text-xs font-extrabold tracking-[.22em] text-lime" dir="ltr">CERTIFICATES</p><h2 class="mt-3 text-3xl font-black sm:text-4xl">التعلّم <span class="text-lime">جزء من الرحلة</span></h2></div><p class="max-w-md text-sm leading-7 text-white/50">الشهادات اللي بتدعم خبرة أسامة وتطوره في المجال.</p></div>
+<div class="grid gap-5 sm:grid-cols-2"><button type="button" data-lightbox="osama-certificate-1.jpg" class="reveal group overflow-hidden border border-white/10 bg-panel p-3 text-right focus:ring-2 focus:ring-lime" aria-label="تكبير الشهادة الأولى"><div class="overflow-hidden bg-white"><img src="osama-certificate-1.jpg" alt="أسامة جمال وهو يحمل الشهادة الأولى" loading="lazy" class="aspect-[5/4] w-full object-contain transition group-hover:scale-[1.02]"></div><p class="flex justify-end px-2 pt-4 text-sm font-bold text-lime">تكبير ↗</p></button><button type="button" data-lightbox="osama-certificate-2.jpg" class="reveal group overflow-hidden border border-white/10 bg-panel p-3 text-right focus:ring-2 focus:ring-lime" aria-label="تكبير الشهادة الثانية"><div class="overflow-hidden bg-white"><img src="osama-certificate-2.jpg" alt="أسامة جمال وهو يحمل الشهادة الثانية" loading="lazy" class="aspect-[5/4] w-full object-contain transition group-hover:scale-[1.02]"></div><p class="flex justify-end px-2 pt-4 text-sm font-bold text-lime">تكبير ↗</p></button></div></div></section>
+<section id="contact" class="px-5 pb-20 sm:px-8 sm:pb-28"><div class="relative mx-auto max-w-7xl overflow-hidden border border-lime/20 bg-panel"><div class="grid-texture pointer-events-none absolute inset-0 opacity-50"></div><div class="relative grid items-center gap-8 p-7 sm:p-10 md:grid-cols-[1fr_.6fr] md:p-14 lg:p-16"><div class="reveal"><p class="text-xs font-extrabold tracking-[.22em] text-lime" dir="ltr">LET'S GET TO WORK</p><h2 class="mt-4 max-w-2xl text-3xl font-black leading-relaxed sm:text-4xl lg:text-5xl">هدفك محتاج خطة.<br><span class="text-lime">ابدأ من هنا.</span></h2><p class="mt-4 max-w-xl text-base leading-8 text-white/60">ابعت لأسامة هدفك، واسأل عن الباقة المناسبة ليك وتفاصيل الاشتراك الأونلاين.</p><a id="mainWhatsapp" href="#" target="_blank" rel="noopener noreferrer" class="btn-shine mt-7 inline-flex items-center justify-center gap-3 bg-lime px-7 py-4 font-black text-night hover:-translate-y-1 hover:bg-white">تواصل على واتساب ↗</a></div><div class="reveal mx-auto w-full max-w-[330px] md:ml-0"><div class="overflow-hidden border border-white/10 bg-night p-2"><img src="osama-cta.jpg" alt="صورة إضافية لأسامة جمال" loading="lazy" class="aspect-[4/5] w-full object-cover"></div></div></div></div></section>
+</main>
+<footer class="border-t border-white/10 bg-[#0b0d0c]"><div class="mx-auto max-w-7xl px-5 py-10 sm:px-8 sm:py-12"><div class="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between"><a href="#home" class="flex items-center gap-3"><span><b class="block font-display text-lg font-extrabold">أسامة جمال</b><small class="text-[10px] font-bold tracking-[.2em] text-lime" dir="ltr">ONLINE COACHING</small></span></a><div class="flex flex-wrap gap-3"><a href="https://instagram.com/osamagamal6" target="_blank" rel="noopener noreferrer" class="border border-white/15 px-4 py-3 text-sm font-bold text-white/70 hover:border-lime hover:text-lime">Instagram ↗</a><a href="https://www.facebook.com/share/1FPq2YaWAM/" target="_blank" rel="noopener noreferrer" class="border border-white/15 px-4 py-3 text-sm font-bold text-white/70 hover:border-lime hover:text-lime">Facebook ↗</a><a href="#plans" class="border border-white/15 px-4 py-3 text-sm font-bold text-white/70 hover:border-lime hover:text-lime">الباقات ↑</a></div></div><div class="mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/35 sm:flex-row sm:justify-between"><p>© <span id="year"></span> أسامة جمال. جميع الحقوق محفوظة.</p><p>اتمرّن بهدف. التزم بخطة. وكمّل.</p></div></div></footer>
+<a id="floatingWhatsapp" href="#" target="_blank" rel="noopener noreferrer" aria-label="التواصل مع أسامة على واتساب" class="float-anim fixed bottom-5 left-5 z-40 grid h-14 w-14 place-items-center bg-lime text-night shadow-lime transition hover:-translate-y-1 hover:scale-105"><svg viewBox="0 0 32 32" class="h-7 w-7" fill="currentColor" aria-hidden="true"><path d="M16.02 3C8.86 3 3.04 8.79 3.04 15.92c0 2.28.6 4.51 1.74 6.48L3 29l6.79-1.77a13.05 13.05 0 0 0 6.23 1.58h.01c7.15 0 12.97-5.8 12.97-12.92A12.88 12.88 0 0 0 16.02 3Zm0 23.62h-.01a10.8 10.8 0 0 1-5.5-1.5l-.4-.23-4.03 1.05 1.08-3.91-.26-.41a10.7 10.7 0 0 1-1.65-5.7c0-5.93 4.84-10.75 10.78-10.75a10.7 10.7 0 0 1 7.62 3.15 10.63 10.63 0 0 1 3.16 7.6c0 5.92-4.84 10.7-10.79 10.7Z"/></svg></a>
+<div id="lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/90 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label="عرض الصورة المكبرة"><button id="closeLightbox" type="button" class="absolute left-4 top-4 grid h-12 w-12 place-items-center border border-white/20 bg-panel text-3xl text-white" aria-label="إغلاق الصورة">×</button><img id="lightboxImage" src="" alt="" class="max-h-[88vh] max-w-[94vw] object-contain"></div>
+<script>
+const WHATSAPP_NUMBER='201000000000';
+const BASE_MESSAGE='أهلاً كوتش أسامة، عايز أعرف تفاصيل التدريب أونلاين.';
+function whatsappUrl(message){return 'https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(message)}
+['mainWhatsapp','floatingWhatsapp'].forEach(id=>document.getElementById(id).href=whatsappUrl(BASE_MESSAGE));
+const menuButton=document.getElementById('menuButton'),mobileMenu=document.getElementById('mobileMenu');
+menuButton.addEventListener('click',()=>{const open=mobileMenu.classList.toggle('menu-open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'إغلاق القائمة':'فتح القائمة')});
+mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileMenu.classList.remove('menu-open');menuButton.setAttribute('aria-expanded','false')}));
+const monthlyButton=document.getElementById('monthlyButton'),quarterlyButton=document.getElementById('quarterlyButton');
+function setDuration(duration){const q=duration==='quarterly';document.querySelectorAll('.plan-price').forEach(p=>p.textContent=Number(p.dataset[q?'quarterly':'monthly']).toLocaleString('en-US'));document.querySelectorAll('.plan-duration').forEach(s=>s.textContent=q?'٣ شهور':'شهر');monthlyButton.className=q?'px-5 py-3 text-sm font-black text-white/60 hover:text-white sm:px-7':'bg-lime px-5 py-3 text-sm font-black text-night sm:px-7';quarterlyButton.className=q?'bg-lime px-5 py-3 text-sm font-black text-night sm:px-7':'px-5 py-3 text-sm font-black text-white/60 hover:text-white sm:px-7';monthlyButton.setAttribute('aria-pressed',String(!q));quarterlyButton.setAttribute('aria-pressed',String(q));document.querySelectorAll('.plan-link').forEach(a=>{const price=a.closest('.plan-card').querySelector('.plan-price').textContent;a.href=whatsappUrl('أهلاً كوتش أسامة، مهتم بـ'+a.dataset.plan+' لمدة '+(q?'٣ شهور':'شهر')+' بسعر '+price+' جنيه. ممكن أعرف التفاصيل؟')})}
+monthlyButton.addEventListener('click',()=>setDuration('monthly'));quarterlyButton.addEventListener('click',()=>setDuration('quarterly'));setDuration('monthly');
+const lightbox=document.getElementById('lightbox'),lightboxImage=document.getElementById('lightboxImage'),closeLightbox=document.getElementById('closeLightbox');let lastFocused=null;
+document.querySelectorAll('[data-lightbox]').forEach(card=>card.addEventListener('click',()=>{lastFocused=card;lightboxImage.src=card.dataset.lightbox;const img=card.querySelector('img');lightboxImage.alt=img?img.alt:'صورة مكبرة';lightbox.classList.remove('hidden');lightbox.classList.add('flex');document.body.style.overflow='hidden';closeLightbox.focus()}));
+function closeViewer(){lightbox.classList.add('hidden');lightbox.classList.remove('flex');lightboxImage.src='';document.body.style.overflow='';if(lastFocused)lastFocused.focus()}
+closeLightbox.addEventListener('click',closeViewer);lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeViewer()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!lightbox.classList.contains('hidden'))closeViewer()});
+const items=document.querySelectorAll('.reveal');if('IntersectionObserver'in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');observer.unobserve(e.target)}}),{threshold:.12});items.forEach(el=>observer.observe(el))}else items.forEach(el=>el.classList.add('is-visible'));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+<!-- أسماء ملفات الصور (كلها PNG وبجانب هذا الملف):
+osama-hero.jpg / osama-cta.jpg / osama-start.png / osama-current-1.jpg / osama-current-2.jpg / osama-certificate-1.jpg / osama-certificate-2.jpg -->
+</body></html>
